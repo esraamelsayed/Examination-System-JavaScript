@@ -1,0 +1,78 @@
+<html>
+  <title>registration page</title>
+  <head>
+  <style>
+     Body {
+       
+       background-image: url("Img2.jpg");
+       height: 100%;
+       background-position: center;
+       background-repeat: no-repeat; 
+       background-size: cover;
+      }
+
+     #submit:hover {
+      cursor: pointer;
+      box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+      transform: translateY(-0.1rem);
+      transition: transform 150ms;
+    }
+
+      #submit {
+        font-size: 20px;
+        padding: .7rem 0;
+        width: 100px;
+        text-align: center;
+        border: 0.1rem solid lightpink;
+        margin-bottom: 1rem;
+        text-decoration: none;
+        color: #56a5eb;
+        background-color: white;
+      
+      
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid lightpink;
+        box-sizing: border-box;
+      }
+      #myform {
+      
+        width: 500px;
+        margin: 0px auto;
+        padding: 20px;
+        background-color: lightblue;
+        border: 3px solid #f1f1f1;
+      }
+  </style>
+  <head> 
+  <body>
+    <br><br>
+    <form id="myform"  action="page2.html" >
+      <br>
+      Enter your first name:
+      <span id="error1" style="color: red"></span>
+      <input name="fname" id="fname" type="text" /><br /><br />
+      Enter your last name:
+      <span id="error2" style="color: red"></span>
+      <input name="lname" id="lname" type="text" /><br /><br />
+      Enter your Email:
+      <span id="error3" style="color: red"></span>
+      <input name="email" id="email" type="text" /><br /><br />
+      Enter Pssword:
+      <span id="error4" style="color: red"> </span> 
+       <input name="password" type="password" id="pass1" /><br /><br />
+      confirm Pssword:
+      <span id="error5" style="color: red"> </span> 
+      <input name="confirm" type="password" id="pass2" /><br /><br />
+      <center> <button id="submit" type="button" onclick="check()">register</button></center>
+    </form>
+
+    <script src="newform.js"></script>
+  </body>
+</html>

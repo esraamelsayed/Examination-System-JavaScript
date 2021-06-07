@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+
+    <style>
+      body,
+      html {
+        height: 100%;
+      }
+
+      .bg {
+        /* The image used */
+        background-image: url("bgImg.jpg");
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .visible {
+        display: none;
+        padding: 30px;
+      }
+
+      .unvisible {
+        display: none;
+      }
+
+      .formDisplay {
+        position: absolute;
+        left: 30%;
+        top: 40%;
+        font-size: 25px;
+      }
+
+      button {
+        font-size: 20px;
+        background-color: lightskyblue;
+        border: 1px solid rgb(226, 26155);
+        margin: 15px;
+      }
+
+      input {
+        margin: 25px;
+      }
+
+      p#timer {
+        text-align: center;
+        font-size: 60px;
+      }
+
+      #markbtns {
+        position: absolute;
+        right: 30px;
+        height: 100vh;
+      }
+
+      input[type="radio"]:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: white;
+        content: "";
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid aqua;
+      }
+
+      input[type="radio"]:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: aqua;
+        content: "";
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+      }
+    </style>
+  </head>
+
+  <body class="bg">
+    <p id="timer"></p>
+
+    <p id="markbtns"></p>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>
